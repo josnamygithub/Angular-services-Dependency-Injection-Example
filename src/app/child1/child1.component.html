@@ -1,0 +1,24 @@
+<h2>From Child</h2>
+
+<label> Enter your child name </label>
+<input type="text" [(ngModel)] ="NameFromchild">
+<br><br>
+<label> Entered  name  : </label>{{NameFromchild}}
+<br><br>
+
+<!-- for parent data displaying to child component  -->
+<h2>Parent name : {{storeparentdata}}</h2>
+
+<!-- end  -->
+
+<!-- child to parent -->
+<label> Enter your parent component value </label>
+
+<input type="text" [ngModel] ="childToparent" (ngModelChange)="onInputChange($event)">
+
+
+
+ 
+
+
+

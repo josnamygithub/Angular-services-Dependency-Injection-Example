@@ -1,0 +1,42 @@
+<h2> {{title}}</h2>
+<h2>From Parent</h2>
+
+<label> Enter your Parent name </label>
+<input type="text" [(ngModel)] ="NameFromParent">
+<br><br>
+<label> Entered name : </label>{{NameFromParent}}
+<br><br>
+<!-- parent data to child  -->
+<label> Enter your child component value </label>
+<input type="text" [(ngModel)] ="nameTochild">
+
+<!-- end -->
+
+<!-- Child to Parent  -->
+<h2>Child Name :  {{childtoparent}}</h2>
+<!-- end  -->
+<br><br>
+<hr> 
+<!-- routing starting -->
+
+<label ><b>routing through button </b> </label>
+<br>
+<br>
+<!-- parameter passthorugh the url and dispaying to that component -->
+<label> Entered parent name  : </label>
+<input type="text" [(ngModel)] ="name">
+<br>
+<br>
+<label> Entered parent Age  : </label>
+<input type="number" [(ngModel)] ="age">
+<br>
+<br>
+<button (click)="onchild1Buttonclicked()">Show Child 1 </button>
+<br>
+<br>
+<button (click)="onchild2Buttonclicked()">Show Child 2 </button>
+ <br>
+ <hr> 
+ <h2>count {{count}}</h2>
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-child1  [storeparentdata] =" nameTochild"  (onNameChange)="onchildnameChnage($event)"></app-child1> -->
